@@ -18,4 +18,6 @@ https://helpcenter.onlyoffice.com/installation/docs-community-install-docker.asp
 
 get secret for every docker-compose up down (nextcloud ONLYOFFICE secret key)
 
-`docker exec <onlyoffice container ID> /var/www/onlyoffice/documentserver/npm/json -f /etc/onlyoffice/documentserver/local.json 'services.CoAuthoring.secret.session.string'`
+```bash
+docker exec <onlyoffice container ID> /var/www/onlyoffice/documentserver/npm/json -f /etc/onlyoffice/documentserver/local.json 'services.CoAuthoring.secret.session.string'
+```
