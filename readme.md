@@ -4,13 +4,15 @@ localhost:81
 default user and pass
 admin@example.com:changeme
 
+config inspiration https://notthebe.ee/blog/easy-ssl-in-homelab-dns01/
+
 ### nextcloud
 
-http://nextcloud:80 forceSSL HTTP/2 support
+(nginx) http://nextcloud:80 forceSSL HTTP/2 support
 
 ### onlyoffice
 
-https:onlyoffice:443 forceSSL HTTP/2 support
+(nginx) https:onlyoffice:443 forceSSL HTTP/2 support
 
 https://helpcenter.onlyoffice.com/installation/docs-community-install-docker.aspx
 
