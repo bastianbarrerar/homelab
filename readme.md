@@ -14,6 +14,18 @@ config inspiration https://notthebe.ee/blog/easy-ssl-in-homelab-dns01/
 
 http://nextcloud:80 _forceSSL HTTP/2 support_
 
+- Add cron job to host
+
+```bash
+crontab -e
+```
+
+paste at the end
+
+```bash
+*/5 * * * * docker exec -i -u www-data <nextcloud container ID> php -f /var/www/html/cron.php
+```
+
 # Onlyoffice
 
 - Nginx Config
